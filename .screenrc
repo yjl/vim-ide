@@ -1,0 +1,10 @@
+# open 256 color mode
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+# don't display the startup message
+startup_message off
+# use ctrl-s instead of ctrl-a
+escape ^Ss
+# scrollback default is 1024, modify it to 5000
+defscrollback 5000
+# don't flash the screen
+vbell off
