@@ -32,7 +32,7 @@
 
 安装方法
 
-	把.vimrc和.vim文件夹拷贝到自己的家目录下就可以了。如果要用索引功能要装ctags和cscope,在ubuntu下安装apt-get install ctags && apt-get install cscope即可。在其他发行版这两个软件的包名一般也一样是ctags和cscope。
+	把.vimrc和.vim文件夹拷贝到自己的家目录下，.vimrc文件的前三个配置可能需要根据实际情况修改。如果要用索引功能要装ctags和cscope,在ubuntu下安装apt-get install ctags && apt-get install cscope即可。在其他发行版这两个软件的包名一般也一样是ctags和cscope。
 	友情提示：切换到root用户后自己家目录下的配置文件就不再有效，但可以用su -m（有的平台下是su - -m）切换到root用户，这样到root用户后，自己家目录下的各种软件的配置文件仍然有效。
 
 

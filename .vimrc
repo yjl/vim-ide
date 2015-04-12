@@ -1,13 +1,11 @@
-"打开工程时检测如果已经建立过索引文件，就自动加载
-if filereadable("cscope.out")        
+"vim自带的选项设置,前三个选项不同情况下可能需要修改
+if filereadable("cscope.out")        "打开工程时自动加载已经建立的索引文件，如果系统里自带的vim脚本已经带了这个，需要删除
 	cs add cscope.out
 endif
-
-"vim自带的选项设置
+set background=dark                  "如果背景是浅色，将dark改成light
+set t_Co=256                         "如果终端支持256色，打开这个选项会让语法着色更漂亮，如果终端不支持256色，颜色会变难看
 :colorscheme desert                  "语法高亮
 syntax on                            "打开语法高亮
-set background=dark                  "如果背景是浅色，将dark改成light
-set t_Co=256                         "如果终端支持256色，打开这个选项会让语法着色更漂亮，如果终端不支持256色，打开后会不和谐
 set ruler                            "在屏幕的下面显示在第几行第几列，我觉得这个就够了，所以没有打开行号显示
 set hlsearch                         "用/搜索时会高亮搜索单词
 set incsearch                        "用/搜索时会时时定位关键词位置
@@ -57,9 +55,9 @@ map <F3> :TagbarToggle<cr>
 "头文件和实现文件切换
 map <F4> :A<cr>
 "更新索引
-map <F5> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q<cr><cr> :cs kill cscope.out<cr> :!cscope -Rbk<cr><cr> :cs add cscope.out<cr>
+map <F5> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q<cr><cr>:if filereadable("cscope.out")<cr>cs kill cscope.out<cr>endif<cr><cr>:!cscope -Rbk<cr><cr>:cs add cscope.out<cr>
 "更新索引,只更新cscope
-map <F6> :cs kill cscope.out<cr> :!cscope -Rbk<cr><cr> :cs add cscope.out<cr>
+map <F6> :if filereadable("cscope.out")<cr>cs kill cscope.out<cr>endif<cr>:!cscope -Rbk<cr><cr>:cs add cscope.out<cr>
 "用python运行这个文件
 map <F9> :!python %<cr>
 "在没有未保存文件的情况下退出全部vim
