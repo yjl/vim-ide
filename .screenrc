@@ -1,10 +1,20 @@
-# open 256 color mode
-termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
-# don't display the startup message
-startup_message off
-# use ctrl-s instead of ctrl-a
-escape ^Ss
-# scrollback default is 1024, modify it to 5000
+startup_message off # don't show welcome message
+escape ^Ss # make screen's function key Ctrl-s
 defscrollback 5000
-# don't flash the screen
-vbell off
+vbell off # turn off the sound when error
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm' # 256 color
+
+
+bind c
+bind - resize -h 90
+bind + resize -h 120
+bind _ focus
+register s ^s|^s+^s_^s\"
+bindkey -k k9 focus # make F9 switch window
+bindkey -k k; windowlist -b # make F10 show window list
+bindkey -k F1 screen /home/Administrator/.ssh/myscreen # make F11 create ssh
+bindkey -k F2 process s # make F12 new frame
+bindkey ^[[1;5H copy # ctrl-home into copy mode
+bindkey ^[[1;5F paste . # ctrl-end paste
+#bindkey "^[[5;2~" eval "copy" "stuff ^b"
+#bindkey "^[[6;2~" eval "copy" "stuff ^f"
