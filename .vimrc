@@ -6,6 +6,7 @@ set nocompatible                 "some plugin need it
 set hlsearch                     "highlight the search
 set incsearch                    "move to fit position after one char input
 set nobackup                     "won't produce the backup file when save file
+set nowritebackup                "won't produce the backup file when save file
 set noswapfile                   "won't use swapfile
 set hidden                       "can open other file when a file is not saved
 set showmatch matchtime=0        "show the other bracket
