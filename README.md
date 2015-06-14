@@ -107,7 +107,7 @@ TODO
     2.F7搜索时不能显示当前单词是第几次出现
 	3.ctags在文件编码与终端编码不相同且跳转行有中文的情况下无法跳转
 	4.\cc注释的时候会把tab变成空格
-    5.写python时AutoComplPop不会自动弹出
+    5.写python时输入点后AutoComplPop不会自动弹出
     
 
 交流
