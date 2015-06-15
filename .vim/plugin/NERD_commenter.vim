@@ -102,7 +102,7 @@ let s:delimiterMap = {
     \ 'caos': { 'left': '*' },
     \ 'calibre': { 'left': '//' },
     \ 'catalog': { 'left': '--', 'right': '--' },
-    \ 'c': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' },
+    \ 'c': { 'left': '//' },
     \ 'cfg': { 'left': '#' },
     \ 'cg': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' },
     \ 'ch': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' },
@@ -112,7 +112,7 @@ let s:delimiterMap = {
     \ 'clojure': { 'left': ';' },
     \ 'cmake': { 'left': '#' },
     \ 'conkyrc': { 'left': '#' },
-    \ 'cpp': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' },
+    \ 'cpp': { 'left': '//' },
     \ 'crontab': { 'left': '#' },
     \ 'cs': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' },
     \ 'csp': { 'left': '--' },
@@ -177,7 +177,7 @@ let s:delimiterMap = {
     \ 'gtkrc': { 'left': '#' },
     \ 'haskell': { 'left': '{-','right': '-}', 'leftAlt': '--' },
     \ 'hb': { 'left': '#' },
-    \ 'h': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' },
+    \ 'h': { 'left': '//' },
     \ 'haml': { 'left': '-#', 'leftAlt': '/' },
     \ 'hercules': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' },
     \ 'hog': { 'left': '#' },
@@ -2730,13 +2730,13 @@ function! s:CreateMaps(target, combo)
 endfunction
 
 if g:NERDCreateDefaultMappings
-    call s:CreateMaps('<plug>NERDCommenterComment',    '<leader>cl')
+    call s:CreateMaps('<plug>NERDCommenterComment',    '<leader>cc')
     call s:CreateMaps('<plug>NERDCommenterToggle',     '<leader>c<space>')
     call s:CreateMaps('<plug>NERDCommenterMinimal',    '<leader>cm')
     call s:CreateMaps('<plug>NERDCommenterSexy',       '<leader>cs')
     call s:CreateMaps('<plug>NERDCommenterInvert',     '<leader>ci')
     call s:CreateMaps('<plug>NERDCommenterYank',       '<leader>cy')
-    call s:CreateMaps('<plug>NERDCommenterAlignLeft',  '<leader>cc')
+    call s:CreateMaps('<plug>NERDCommenterAlignLeft',  '<leader>cl')
     call s:CreateMaps('<plug>NERDCommenterAlignBoth',  '<leader>cb')
     call s:CreateMaps('<plug>NERDCommenterNest',       '<leader>cn')
     call s:CreateMaps('<plug>NERDCommenterUncomment',  '<leader>cu')

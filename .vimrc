@@ -9,6 +9,7 @@ set nobackup                     "won't produce the backup file when save file
 set nowritebackup                "won't produce the backup file when save file
 set noswapfile                   "won't use swapfile
 set hidden                       "can open other file when a file is not saved
+set ruler                        "show ruler at the right bottom
 set showmatch matchtime=0        "show the other bracket
 set laststatus=2                 "status bar will show anytime
 set updatetime=800               "tagbar response 800ms
@@ -50,7 +51,11 @@ map <F6> :set paste!<cr>:set paste?<cr>
 "highlight
 map <F7> ms:%s /\<<C-R>=expand("<cword>")<CR>\>//gn<cr>`s
 "swapfile list
-map <F8> \be
+map <F8> :BufExplorer<CR>
+"comment visual line
+vnoremap <silent> , :call NERDComment(1, "alignLeft")<cr>
+"uncomment visual line
+vnoremap <silent> . :call NERDComment(1, "uncomment")<cr>
 "show list if more tag 
 nnoremap <c-]> g<c-]>                                         
 "move to right window
