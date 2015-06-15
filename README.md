@@ -1,35 +1,24 @@
 目录
 
-	缘起
 	使用范围
 	安装方法
-	自己总结的浏览和编写C/C++工程的使用方法 
 	使用到的插件
+	自己总结的浏览和编写C/C++工程的使用方法 
     TODO
-	交流
-
-
-缘起
-
-	刚开始做Linux C/C++的时候试了很多编辑方式，包括：
-	souce insight:通过Linux上的samba服务去写Linux主机里的代码(我觉得不通过定制版的vim和emacs之外最好的选择，一方面不需要打开虚拟机界面，另一方面souce insight写代码也确实挺好用的。
-	eclipse:很好用，但不得打开Linux图形界面，另外eclipse运行很慢，尤其大项目
-	qt creator:即使不是QT项目，当然也可以在Linux图形界面用QT CREATOR写代码，比eclipse运行快，当然如果是Linux下的QT项目当然QT creator也是首选。
-	VIM与EMACS:作为开发环境都要加跳转及自动补全类的插件。它们虽然功能上可能并没有其他IDE境强大，但其他IDE都需要打开很耗资源的图形界面，另外VIM和EMACS有很多其他IDE都不具备的好处,比如所有操作都不需要鼠标,能一键搜索等。另外它们都可以直接ssh到Linux主机然直接使用,缺点在于上手起来都较不容易。VIM与EMACS都可以无界限的加任何功能的插件，理论在一个上面能实现的功能在另一个上面一定能实现，不存在谁比谁强大的问题。从基本操作上个人还是更喜欢emacs，但因为折腾emcas插件比vim更难所以选择了vim。
-	这个VIM的定制是在一年的时间里逐渐完善起来的，其中一段时间转了emacs，后来折腾cedet实在没折腾不完善，也找不到谁用能交流下，所以最终回到了vim。这个vim定制的原则是尽量保持精简快速与更好的兼容性，但实现更多更强更实用更加人性化的功能。
+	缘起
 
 
 使用范围
     
-    1.vim 7.2及以上版本
-	2.浏览和编写c/c++、python项目
+    系统要求：vim 7.2及以上版本，安装有ctags和cscope
+	功能：浏览和编写c/c++、python项目
+    特点：安装绿色简单，功能可比source insight，但保持了原汁原味的vim。
 
 
 安装方法
 
 	1.把.vimrc和.vim文件夹拷贝到家目录下，如果终端背景为白色，将.vimrc中background选项改为light。
-    2.cscope ctags 用apt-get安装: apt-get install ctags && apt-get install cscope
-      cscope ctags 用yum安装: yum install ctags && yum install cscope
+    2.安装cscope ctags。用apt-get安装: apt-get install ctags cscope(用yum安装: yum install ctags cscope)
 
 
 使用到的插件    
@@ -45,7 +34,6 @@
 
 自己总结的浏览和编写C/C++工程的常规的使用方法 
 
-	(这个不能代替vim的基础教程，只写了跟浏览和编写C/C++代码相关性比较大的）
 	打开项目:
 		cd到工程根目录下，vim **/**/**.cpp(c)任意C/C++文件即可,必须是工程根目录
 	建立索引：
@@ -110,6 +98,11 @@ TODO
     5.写python时输入点后AutoComplPop不会自动弹出
     
 
-交流
+缘起
 
-	我的邮箱445324162@qq.com。
+	刚开始做Linux C/C++的时候试了很多编辑方式，包括：
+	souce insight:通过Linux上的samba服务去写Linux主机里的代码(我觉得不通过定制版的vim和emacs之外最好的选择，一方面不需要打开虚拟机界面，另一方面souce insight写代码也确实挺好用的。
+	eclipse:很好用，但不得打开Linux图形界面，另外eclipse运行很慢，尤其大项目
+	qt creator:即使不是QT项目，当然也可以在Linux图形界面用QT CREATOR写代码，比eclipse运行快，当然如果是Linux下的QT项目当然QT creator也是首选。
+	VIM与EMACS:作为开发环境都要加跳转及自动补全类的插件。它们虽然功能上可能并没有其他IDE境强大，但其他IDE都需要打开很耗资源的图形界面，另外VIM和EMACS有很多其他IDE都不具备的好处,比如所有操作都不需要鼠标,能一键搜索等。另外它们都可以直接ssh到Linux主机然直接使用,缺点在于上手起来都较不容易。VIM与EMACS都可以无界限的加任何功能的插件，理论在一个上面能实现的功能在另一个上面一定能实现，不存在谁比谁强大的问题。从基本操作上个人还是更喜欢emacs，但因为折腾emcas插件比vim更难所以选择了vim。
+	这个VIM的定制是在一年的时间里逐渐完善起来的，其中一段时间转了emacs，后来折腾cedet实在没折腾不完善，也找不到谁用能交流下，所以最终回到了vim。这个vim定制的原则是尽量保持精简快速与更好的兼容性，但实现更多更强更实用更加人性化的功能。
