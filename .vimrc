@@ -1,6 +1,6 @@
 colorscheme desert              
 syntax on                       
-filetype plugin indent on        "some plugin need it
+filetype plugin indent on 
 set background=dark "dark light  "if you console background is white make it light
 set nocompatible                 "some plugin need it
 set hlsearch                     "highlight the search
@@ -24,10 +24,8 @@ set ci cinoptions=g0,:0          "some indent rules
 
 highlight default link TagbarHighlight  Title
 let NERDTreeQuitOnOpen=1                                                   
-let NERDTreeWinPos=1
 let NERDTreeDirArrows=0
 let NERDRemoveExtraSpaces=0
-let g:tagbar_left=1
 let g:tagbar_sort=0
 let g:tagbar_width=30
 let g:tagbar_compact=1
@@ -39,30 +37,30 @@ let OmniCpp_ShowPrototypeInAbbr = 1
 let OmniCpp_MayCompleteScope = 1
 
 "file list
-map <F2> :NERDTreeToggle<cr>                                
-"tarbar function list
-map <F3> :TagbarToggle<cr>
+map <silent> <F2> :NERDTreeToggle<cr>
+"tarbar functon list
+map <silent> <F3> :TagbarToggle<cr>
+"swapfile list
+map <silent> <F4> :BufExplorer<CR>
 "header and implement file switch
-map <F4> :A<cr>
+map <F5> :A<cr>
 "update index
-map <F5> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q<cr><cr>:cs kill cscope.out<cr>:!cscope -Rb<cr><cr>:cs add cscope.out<cr>
-"switch paste mode
-map <F6> :set paste!<cr>:set paste?<cr>
+map <F6> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q<cr><cr>:cs kill cscope.out<cr>:!cscope -Rb<cr><cr>:cs add cscope.out<cr>
 "highlight
 map <F7> ms:%s /\<<C-R>=expand("<cword>")<CR>\>//gn<cr>`s
-"swapfile list
-map <F8> :BufExplorer<CR>
+"switch paste mode
+map <F8> :set paste!<cr>:set paste?<cr>
 "comment visual line
 vnoremap <silent> , :call NERDComment(1, "alignLeft")<cr>
 "uncomment visual line
 vnoremap <silent> . :call NERDComment(1, "uncomment")<cr>
 "show list if more tag 
-nnoremap <c-]> g<c-]>                                         
+nnoremap <c-]> g<c-]>
 "move to right window
-noremap <c-l> <c-w>l                                         
+noremap <c-l> <c-w>l
 "move to up window
-noremap <c-k> <c-w>k                                              
-"move to down windown
+noremap <c-k> <c-w>k
+"move to down window
 noremap <c-j> <c-w>j
 "move to left window
 noremap <c-h> <c-w>h
@@ -73,7 +71,7 @@ nmap <C-@>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 "list the position where to call this word
 nmap <C-@>c :cs find c <C-R>=expand("<cword>")<CR><CR>
 "search word in the project
-nmap <C-@>s :cs find s <C-R>=expand("<cword>")<CR><CR>        
+nmap <C-@>s :cs find s <C-R>=expand("<cword>")<CR><CR>
 "search word in the project and the word can be in text
 nmap <C-@>t :cs find t <C-R>=expand("<cword>")<CR><CR>
 "search word in the project and the word can be in text, support regex

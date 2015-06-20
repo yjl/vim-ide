@@ -2,10 +2,9 @@ startup_message off # don't show welcome message
 escape ^Ss # make screen's function key Ctrl-s
 defscrollback 5000
 vbell off # turn off the sound when error
-termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm' # 256 color
+#termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm' # 256 color
 
 
-bind c
 bind - resize -h 90
 bind + resize -h 120
 bind _ focus
