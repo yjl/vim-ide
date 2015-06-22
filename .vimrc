@@ -11,6 +11,7 @@ set noswapfile                   "won't use swapfile
 set hidden                       "can open other file when a file is not saved
 set ruler                        "show ruler at the right bottom
 set showmatch matchtime=0        "show the other bracket
+set wmnu wildmode=longest:full   "when in command mode can use auto complete same as bash
 set laststatus=2                 "status bar will show anytime
 set updatetime=800               "tagbar response 800ms
 set expandtab tabstop=4          "expand the tab to 4 space
