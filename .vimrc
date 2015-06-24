@@ -1,6 +1,6 @@
-colorscheme desert              
-syntax on                       
-filetype plugin indent on 
+colorscheme desert
+syntax on
+filetype plugin indent on
 set background=dark "dark light  "if you console background is white make it light
 set nocompatible                 "some plugin need it
 set hlsearch                     "highlight the search
@@ -15,7 +15,7 @@ set wmnu wildmode=longest:full   "when in command mode can use auto complete sam
 set laststatus=2                 "status bar will show anytime
 set updatetime=800               "tagbar response 800ms
 set expandtab tabstop=4          "expand the tab to 4 space
-set shiftwidth=4                 "make the indent 4 length    
+set shiftwidth=4                 "make the indent 4 length
 set softtabstop=4                "backspace can del 4 space
 set lcs=tab:\|\                  "display tab to green line
 set backspace=indent,eol,start   "better backspace
@@ -24,17 +24,17 @@ set fileformats=unix,dos,mac     "line feed different in different mode
 set ci cinoptions=g0,:0          "some indent rules
 
 highlight default link TagbarHighlight  Title
-let NERDTreeQuitOnOpen=1                                                   
+let NERDTreeQuitOnOpen=1
 let NERDTreeDirArrows=0
 let NERDRemoveExtraSpaces=0
 let g:tagbar_sort=0
 let g:tagbar_width=30
 let g:tagbar_compact=1
-let g:tagbar_foldlevel=1 
+let g:tagbar_foldlevel=1
 let g:tagbar_iconchars=['+', '-']
 set completeopt=menuone,longest
 let OmniCpp_SelectFirstItem = 2
-let OmniCpp_ShowPrototypeInAbbr = 1 
+let OmniCpp_ShowPrototypeInAbbr = 1
 let OmniCpp_MayCompleteScope = 1
 
 "file list
@@ -82,7 +82,7 @@ nmap <C-@>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
 "list the file include the file which filename is this word
 nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 "list the file which include this file
-nmap <C-@>I :cs find i ^<C-R>=expand("%")<CR>$<CR>
+nmap <C-@>I :cs find i ^<C-R>=expand("%:t")<CR>$<CR>
 
 if has("cscope") 
     set nocsverb
