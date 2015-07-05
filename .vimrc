@@ -36,6 +36,8 @@ set completeopt=menuone,longest
 let OmniCpp_SelectFirstItem = 2
 let OmniCpp_ShowPrototypeInAbbr = 1
 let OmniCpp_MayCompleteScope = 1
+let g:pydiction_location = '~/.vim/complete-dict'
+
 
 "file list
 map <silent> <F2> :NERDTreeToggle<cr>
@@ -82,7 +84,7 @@ nmap <C-@>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
 "list the file include the file which filename is this word
 nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 "list the file which include this file
-nmap <C-@>I :cs find i ^<C-R>=expand("%:t")<CR>$<CR>
+nmap <C-@>I :cs find i <C-R>=expand("%:t")<CR><CR>
 
 if has("cscope") 
     set nocsverb
