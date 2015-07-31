@@ -45,12 +45,12 @@ map <silent> <F2> :NERDTreeToggle<cr>
 map <silent> <F3> :TagbarToggle<cr>
 "swapfile list
 map <silent> <F4> :BufExplorer<CR>
-"header and implement file switch
-map <F5> :A<cr>
-"update index
-map <F6> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q<cr><cr>:cs kill cscope.out<cr>:!cscope -Rb<cr><cr>:cs add cscope.out<cr>
 "highlight
-map <F7> ms:%s /\<<C-R>=expand("<cword>")<CR>\>//gn<cr>`s
+map <F5> ms:%s /\<<C-R>=expand("<cword>")<CR>\>//gn<cr>`s
+"header and implement file switch
+map <F6> :A<cr>
+"update index
+map <F7> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q<cr><cr>:cs kill cscope.out<cr>:!cscope -Rb<cr><cr>:cs add cscope.out<cr>
 "switch paste mode
 map <F8> :set paste!<cr>:set paste?<cr>
 "comment visual line
