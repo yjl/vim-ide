@@ -22,6 +22,10 @@ set backspace=indent,eol,start   "better backspace
 set fileencodings=utf-8,cp936    "auto test the file is uft-8 or cp936
 set fileformats=unix,dos,mac     "line feed different in different mode
 set ci cinoptions=g0,:0          "some indent rules
+let g:acp_behaviorKeywordCommand = "\<C-o>"
+let g:acp_behaviorKeywordLength = -1
+let g:acp_behaviorFileLength = -1
+let g:SuperTabDefaultCompletionType = "<c-n>"
 
 highlight default link TagbarHighlight  Title
 let NERDTreeQuitOnOpen=1
@@ -34,10 +38,10 @@ let g:tagbar_foldlevel=1
 let g:tagbar_iconchars=['+', '-']
 set completeopt=menuone,longest
 let OmniCpp_SelectFirstItem = 2
-let OmniCpp_ShowPrototypeInAbbr = 1
+let OmniCpp_ShowPrototypeInAbbr = 1 
+let OmniCpp_MayCompleteDot = 1   
+let OmniCpp_MayCompleteArrow = 1 
 let OmniCpp_MayCompleteScope = 1
-let g:pydiction_location = '~/.vim/complete-dict'
-
 
 "file list
 map <silent> <F2> :NERDTreeToggle<cr>
