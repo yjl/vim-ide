@@ -26,6 +26,7 @@ let g:acp_behaviorKeywordCommand = "\<C-o>"
 let g:acp_behaviorKeywordLength = -1
 let g:acp_behaviorFileLength = -1
 let g:SuperTabDefaultCompletionType = "<c-n>"
+let g:SuperTabLongestHighlight = 1
 
 highlight default link TagbarHighlight  Title
 let NERDTreeQuitOnOpen=1
