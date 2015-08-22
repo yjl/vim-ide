@@ -42,8 +42,6 @@ let g:tagbar_foldlevel=1
 let g:tagbar_iconchars=['+', '-']
 let OmniCpp_SelectFirstItem = 2
 let OmniCpp_ShowPrototypeInAbbr = 1 
-let OmniCpp_MayCompleteDot = 1   
-let OmniCpp_MayCompleteArrow = 1 
 let OmniCpp_MayCompleteScope = 1
 
 "file list
