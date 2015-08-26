@@ -90,8 +90,7 @@
 TODO
 
     1.ctags在文件编码与终端编码不相同且跳转行有中文的情况下无法跳转
-    2.在打开tagbar的同时，使用omnicpp补全，omnicpp补全会非常缓慢
-    3.在cygwin下在同时打开nerdtree和tagbar的情况下退出，退出会出错
+    2.在cygwin下在同时打开nerdtree和tagbar的情况下退出，退出会出错
     
 
 缘起
