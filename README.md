@@ -10,15 +10,15 @@
 
 使用范围
     
-    系统要求：vim 7.2及以上版本，安装有ctags和cscope
-    功能：浏览和编写c/c++项目
+    系统要求：vim 7.2及以上版本，安装有ctags和cscope，完美支持linux, mac, cygwin. (mac下为更良好地用户体验，请将shell的描述文件成pro)
+    功能：浏览和编写c/c++, python项目
     特点：安装绿色简单，功能可比source insight，但保持了原汁原味的vim。
 
 
 安装方法
 
     1.把.vimrc和.vim文件夹拷贝到家目录下，如果终端背景为白色，将.vimrc中background选项改为light。
-    2.安装cscope ctags。用apt-get安装: apt-get install ctags cscope(用yum安装: yum install ctags cscope)
+    2.安装cscope ctags。用apt-get安装: apt-get install ctags cscope(用yum安装: yum install ctags cscope, 用brew安装: brew install ctags cscope)
 
 
 使用到的插件    
@@ -54,8 +54,8 @@
             ctrl-o     回退到光标之前的位置。
             ctrl-i     按ctrl-o后返回。
         2.搜索
-            ctrl-2 s   在整个工程里面搜索光标下单词，但不包括字符串和注释。
-            ctrl-2 t   在整个工程里面搜索光标下单词，包括字符串和注释。
+            ctrl-[ s   在整个工程里面搜索光标下单词，但不包括字符串和注释。
+            ctrl-[ t   在整个工程里面搜索光标下单词，包括字符串和注释。
             :cscope find t word  在工程中搜索字符串word。
             <F5>       高亮光标下单词
             #          向上搜索光标下单词
@@ -66,9 +66,9 @@
             F2         通过文件树跳转。
             F4         已经打开的文件列表
             F6         在头文件和实现文件两个文件切换。
-            ctrl-2 f   跳转到文件名含有光标下单词的文件。
-            ctrl-2 i   跳转到包含光标下单词对应文件的文件。
-            ctrl-2 I   跳转到包含当前文件的文件。
+            ctrl-[ f   跳转到文件名含有光标下单词的文件。
+            ctrl-[ i   跳转到包含光标下单词对应文件的文件。
+            ctrl-[ I   跳转到包含当前文件的文件。
     编写C/C++代码：
         1.替换功能
             :%s /word1/word2/g 将这个文件里的word1替换成word2。
@@ -79,18 +79,13 @@
         3.注释及反注释
             ,          注释选中行
             .          反注释选中行
-    文件编码格式：
-        1.vs里面经常提到的unicode指得是utf16，windows上常用的文本采用gb2312，linux下常用utf8。
-        2.set fileencoding查看当前vim用哪种格式解析得文件，如果编码格式识别错误，:e ++enc=cp936(改成自己需要的)按新的编码格式重新载入。
-        3.用set fileencoding=cp936(改成自己需要的）将文件转成其他编码格式（相当于iconv命令）。
-    su切换用户：
-        su加上-m参数在切换用户后仍然使用之前用户家目录下的配置文件。
 
 
 TODO
 
     1.ctags在文件编码与终端编码不相同且跳转行有中文的情况下无法跳转
     2.在cygwin下在同时打开nerdtree和tagbar的情况下退出，退出会出错
+
     
 
 缘起
