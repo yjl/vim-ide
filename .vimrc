@@ -1,7 +1,7 @@
 colorscheme desert
 syntax on
 filetype plugin indent on
-set background=dark "dark light  "if you console background is white make it light
+set background=light "dark light "if you console background is white make it light
 set nocompatible                 "some plugin need it
 set hlsearch                     "highlight the search
 set incsearch                    "move to fit position after one char input
@@ -48,16 +48,16 @@ let OmniCpp_MayCompleteScope = 1
 map <silent> <F2> :NERDTreeToggle<cr>
 "tarbar functon list
 map <silent> <F3> :TagbarToggle<cr>
-"swapfile list
-map <silent> <F4> :BufExplorer<CR>
-"highlight
-map <F5> ms:%s /\<<C-R>=expand("<cword>")<CR>\>//gn<cr>`s
 "header and implement file switch
-map <F6> :A<cr>
+map <F4> :A<cr>
 "update index
-map <F7> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q<cr><cr>:cs kill cscope.out<cr>:!cscope -Rb<cr><cr>:cs add cscope.out<cr>
+map <F5> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q<cr><cr>:cs kill cscope.out<cr>:!cscope -Rb<cr><cr>:cs add cscope.out<cr>
 "switch paste mode
-map <F8> :set paste!<cr>:set paste?<cr>
+map <F6> :set paste!<cr>:set paste?<cr>
+"highlight
+map <F7> ms:%s /\<<C-R>=expand("<cword>")<CR>\>//gn<cr>`s
+"swapfile list
+map <silent> <F8> :BufExplorer<CR>
 "comment visual line
 vnoremap <silent> , :call NERDComment(1, "alignLeft")<cr>
 "uncomment visual line
