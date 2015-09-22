@@ -17,7 +17,8 @@
 
 安装方法
 
-    1.把.vimrc和.vim文件夹拷贝到家目录下，如果终端背景为白色，将.vimrc中background选项改为light。
+    1.把.vimrc和.vim文件夹拷贝到家目录下，如果终端背景为白色，将.vimrc中background选项改为light。(或直接运行下面命令)
+      hash wget unzip && mv ~/.vim ~/vimbk ; mv ~/.vimrc ~/vimrcbk ; wget https://github.com/langsim/vim-ide/archive/master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ && rm -rf master.zip vim-ide-maste
     2.安装cscope ctags。用apt-get安装: apt-get install ctags cscope(用yum安装: yum install ctags cscope, 用brew安装: brew install ctags cscope)
 
 
