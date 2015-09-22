@@ -16,11 +16,12 @@
 
 安装及更新方法
 
+    (确保设备已经联网)
     1.centos, redhat, fedora安装命令：
       yum install ctags cscope wget unzip -y && wget https://github.com/langsim/vim-ide/archive/master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
     2.debian, ubuntu安装命令：
       apt install ctags cscope wget unzip -y && wget https://github.com/langsim/vim-ide/archive/master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
-    3.mac安装命令：（请确保已经安装brew, wget和unzip）
+    3.mac安装命令,要求已经安装brew, wget和unzip：
       brew install ctags cscope -y && hash ctags cscope wget unzip && wget https://github.com/langsim/vim-ide/archive/master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
 
     (上面的命令的实际操作是安装ctags, cscope, wget和unzip及下载vim配置文件和插件解压到家目录下)
