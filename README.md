@@ -1,10 +1,9 @@
 目录
 
     使用范围
-    安装方法
-    使用到的插件
+    安装及更新方法
     自己总结的浏览和编写C/C++工程的使用方法
-    TODO
+    使用到的插件
     缘起
 
 
@@ -15,25 +14,16 @@
     特点：安装绿色简单，功能可比source insight，但保持了原汁原味的vim。
 
 
-安装方法
+安装及更新方法
 
     1.centos, redhat, fedora安装命令：
       yum install ctags cscope wget unzip -y && wget https://github.com/langsim/vim-ide/archive/master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
     2.debian, ubuntu安装命令：
       apt install ctags cscope wget unzip -y && wget https://github.com/langsim/vim-ide/archive/master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
+    3.mac安装命令：（请确保已经安装brew, wget和unzip）
+      brew install ctags cscope -y && hash ctags cscope wget unzip && wget https://github.com/langsim/vim-ide/archive/master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
+
     (上面的命令的实际操作是安装ctags, cscope, wget和unzip及下载vim配置文件和插件解压到家目录下)
-
-
-使用到的插件    
-
-    tagbar         #函数变量列表（修改部分BUG，修改配置文件）
-    nerdcommenter  #注释功能（修改C语言默认用//注释，修改配置文件）
-    a              #切换头文件和实现文件（修改跨目录不能找到的问题，无修改配置文件）
-    nerdtree       #目录树（无修改，修改配置文件）
-    omnicpp        #C/C++的自动补全插件（无修改，修改配置文件）
-    bufexplorer    #当前打开的文件列表（无修改，无修改配置文件）
-    AutoComplPop   #自动弹出补全菜单 （无修改，无修改配置文件）                                            
-    SuperTab       #按tab补全 （无修改，无修改配置文件）                                            
 
 
 自己总结的浏览和编写C/C++工程的常规的使用方法 
@@ -84,10 +74,16 @@
             .          反注释选中行
 
 
-TODO
+使用到的插件    
 
-    1.ctags在文件编码与终端编码不相同且跳转行有中文的情况下无法跳转 (不容易遇见）
-    2.在cygwin下在同时打开nerdtree和tagbar的情况下退出，退出会出错 (不影响使用）
+    tagbar         #函数变量列表（修改部分BUG，修改配置文件）
+    nerdcommenter  #注释功能（修改C语言默认用//注释，修改配置文件）
+    a              #切换头文件和实现文件（修改跨目录不能找到的问题，无修改配置文件）
+    nerdtree       #目录树（无修改，修改配置文件）
+    omnicpp        #C/C++的自动补全插件（无修改，修改配置文件）
+    bufexplorer    #当前打开的文件列表（无修改，无修改配置文件）
+    AutoComplPop   #自动弹出补全菜单 （无修改，无修改配置文件）                                            
+    SuperTab       #按tab补全 （无修改，无修改配置文件）                                            
 
 
 缘起
