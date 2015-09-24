@@ -82,7 +82,7 @@ if !exists('g:tagbar_iconchars')
 endif
 
 let s:keymaps = [
-    \ ['jump',       'o'],
+    \ ['jump',       '<CR>'],
     \ ['preview',    'p'],
     \ ['previewwin', 'P'],
     \ ['nexttag',    '<C-N>'],
@@ -91,7 +91,7 @@ let s:keymaps = [
     \
     \ ['openfold',      ['+', '<kPlus>', 'zo']],
     \ ['closefold',     ['-', '<kMinus>', 'zc']],
-    \ ['togglefold',    ['O', 'za']],
+    \ ['togglefold',    ['o', 'za']],
     \ ['openallfolds',  ['*', '<kMultiply>', 'zR']],
     \ ['closeallfolds', ['=', 'zM']],
     \
