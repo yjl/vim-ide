@@ -1,6 +1,7 @@
 colorscheme desert
 syntax on
 filetype plugin indent on
+set t_Co=256
 set background=dark  "dark light "if you console background is white make it light
 set nocompatible                 "some plugin need it
 set hlsearch                     "highlight the search
