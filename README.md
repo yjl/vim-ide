@@ -25,7 +25,7 @@
     3.mac安装命令,要求已经安装brew, wget和unzip：
       brew install ctags cscope -y && hash ctags cscope wget unzip && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
 
-    (上面的命令的实际操作是安装ctags, cscope, wget和unzip及下载vim配置文件和插件解压到家目录下)
+    (上面的命令的实际操作是安装ctags, cscope, wget和unzip, 同时下载vim配置文件和插件解压到家目录下)
 
 
 自己总结的浏览和编写C/C++工程的常规的使用方法 
