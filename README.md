@@ -25,7 +25,7 @@
     3.mac安装命令,要求已经安装brew, wget和unzip：
       brew install ctags cscope -y && hash ctags cscope wget unzip && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
 
-    (上面的命令的实际操作是安装ctags, cscope, wget和unzip, 同时下载vim配置文件和插件解压到家目录下)
+    (上面的命令的实际操作是安装ctags、 cscope、 wget和unzip, 同时下载vim配置文件和插件解压到家目录下)
 
 
 自己总结的浏览和编写C/C++工程的常规的使用方法 
@@ -87,13 +87,14 @@
 
 对比
 
-    souce insight:通过Linux上的samba服务去写Linux主机里的代码(我觉得不通过定制版的vim和emacs之外最好的选择，一方面不需要打开虚拟机界面，另一方面souce insight写代码也确实挺好用的。
-    eclipse:很好用，但不得打开Linux图形界面，另外eclipse运行很慢，尤其大项目
-    qt creator:即使不是QT项目，当然也可以在Linux图形界面用QT creator写代码，比eclipse运行快，当然如果是Linux下的QT项目当然QT creator也是首选。
+    souce insight:通过Linux上的samba服务去写Linux主机里的代码，或者在windows上用source insight写完代码后再传到linux上。
+    eclipse:很好用，但不得打开Linux图形界面，另外eclipse运行很慢，尤其大项目。
+    qt creator:即使不是QT项目，当然也可以在Linux图形界面用QT creator写代码，比eclipse运行快。
     codeblocks:也跟eclipse和qtcreator一样,要在linux下的图形界面下使用，用的不多，不做评价。
-    VIM与EMACS:作为开发环境都要加跳转及自动补全类的插件。不需要打开图形界面,不需要鼠标,能一键搜索。另外它们都可以直接ssh到Linux主机然直接使用。VIM与EMACS都可以无界限的加任何功能的插件，理论在一个上面能实现的功能在另一个上面一定能实现。从基本操作上个人还是更喜欢emacs，但vim更容易定制到自己希望的样子。
+    VIM与EMACS:作为开发环境都要加跳转及自动补全类的插件。不需要打开图形界面,不需要鼠标,能一键搜索。另外它们都可以直接ssh到Linux主机直接使用。VIM与EMACS都可以无界限的加任何功能的插件。从基本操作上个人还是更喜欢emacs，但vim更容易定制到自己希望的样子。
 
 
 愿景与方向
 
-    在linux上写C/C++代码，用更少的学习成本就可以有更多的便利和更好的用户体验，同时保持更好的简洁性。
+    每个人可以用特别少的学习成本在终端上特别方便的写代码。
+    用更少的学习成本就可以有更多的便利和更好的用户体验，同时保持安装过程以及这些配置文件更好的简洁性。
