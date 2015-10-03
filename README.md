@@ -1,12 +1,3 @@
-content
-
-    where use it
-    how to install and update
-    how to use it read and write c/c++ project
-    hope
-    FAQ
-
-
 where use it
     
     system requirements：vim 7.2 or higher，support linux、 mac、 cygwin.
