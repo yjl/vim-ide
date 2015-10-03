@@ -1,74 +1,72 @@
-目录
+Content
 
-    使用范围
-    安装及更新方法
-    自己总结的浏览和编写C/C++工程的使用方法
-    方向与愿景
+    where use it
+    how to install and update
+    how to use it read and write c/c++ project
+    hope
     FAQ
 
 
-使用范围
+where use it
     
-    系统要求：vim 7.2及以上版本，完美支持linux, mac, cygwin.
-    功能：浏览和编写c/c++, python项目
-    特点：安装绿色简单，功能可比source insight，但保持了原汁原味的vim。
+    System requirements：vim 7.2 or higher，support linux、 mac、 cygwin.
+    funciton：browse c/c++, python project
+    difference：one command to install，the experience is as much as source insight，but it't a simple vim. beside script, it only need ctags ans cscope.
 
 
-安装及更新方法
+how to install and update
 
-    (确保设备已经联网)
-    1.centos, redhat, fedora安装命令：
+    (insure the computer has connect to internet)
+    1.centos, redhat, fedora install or update command:
       yum install ctags cscope wget unzip -y && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
-    2.debian, ubuntu安装命令：
+    2.debian, ubuntu install or update command:
       apt-get install ctags cscope wget unzip -y && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
-    3.mac安装命令,要求已经安装brew, wget和unzip：
+    3.mac install or update command, insure has installed brew, wget and unzip：
       brew install ctags cscope -y && hash ctags cscope wget unzip && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
 
-    (上面的命令的实际操作是安装ctags、 cscope、 wget和unzip, 同时下载vim配置文件和插件放到到家目录下，会自动清除临时文件)
+    (the command will install ctags、 cscope、 wget and unzip, at the same time it will download vim script into home dir and remove temp file)
 
 
-自己总结的浏览和编写C/C++工程的常规的使用方法 
+how to use it read and write c/c++ project
 
-    打开项目:
-        cd到工程根目录下，vim (回车),必须是工程根目录。按F2打开文件列表，选择文件打开。
-    建立索引:
-        第一次打开项目，及代码更新后按F5更新索引，这个索引与source insight中的更新索引意义相同。
-    浏览C/C++代码:
-        浏览代码会常用的几个功能:
-        1.跳转
-            F3         通过tagbar函数列表跳转到当前文件的某个函数
-            ctrl-]     跳转到光标下变量或函数在工程中定义的位置。(局部变量不能跳转) (:ts word)
-            gd         跳转到局部变量定义的位置
-            [[         跳转到当前函数的开头
-            ][         跳转到当前函数的结尾
-            ctrl-o     回退到光标之前的位置。
-            ctrl-i     按ctrl-o后返回。
-            ctrl-h, j, k, l 光标在各个窗口间跳转
-        2.搜索
-            ctrl-[ s   在整个工程里面搜索光标下单词，但不包括字符串和注释。 (:cs find s word)
-            ctrl-[ t   在整个工程里面搜索光标下单词，包括字符串和注释。 (:cs find t word)
-            <F6>       显示隐藏不可见字符的开关
-            <F7>       高亮光标下单词
-            /word      搜索单词word
-        3.切换到工程下的另一个文件
-            F2         通过文件树跳转。
-            F8         已经打开的文件列表
-            F4         在头文件和实现文件两个文件切换。
-    编写C/C++代码：
-        1.替换功能
-            :%s /word1/word2/g 将这个文件里的word1替换成word2。
-        2.对齐代码
-            =          对齐选中行代码
-            ==         对齐当前行代码
-        3.注释及反注释
-            ,          注释选中行
-            .          反注释选中行
+    open project:
+        cd into project root dir，vim (press enter button), must in project root dir. press F2 to open file tree, and select file to open.
+    create index:
+        first open project or update some code in project, press F5 to update index，the index function is same to source insight index.
+    read c/c++ code:
+        1.jump
+            F3         throught tagbar to jump to another function in the file
+            ctrl-]     jump to variable or function defination in project。(can't jump to local variable defination) (:ts word)
+            gd         jump to local varibale defination
+            [[         jump to start of function
+            ][         jump to end of function
+            ctrl-o     jump to cursor last position
+            ctrl-i     return after press ctrl-o
+            ctrl-h, j, k, l      move to another window in vim
+        2.search
+            ctrl-[ s   search variable or function in project (:cs find s word)
+            ctrl-[ t   search text in project (:cs find t word)
+            <F6>       switch of display invisible character or not 
+            <F7>       highlight word under the cursor 
+            /word      search word in the file
+        3.open another file in project
+            F2         throught file tree
+            F8         throught opened file list
+            F4         switch of include file and implement file
+    write c/c++ code：
+        1.align
+            =          align selected code
+            ==         align current line code
+        2.comment
+            ,          comment selected code
+            .          uncomment selected code
+        3.replace
+            :%s /word1/word2/g  replace word1 to word2 in the file
 
 
-愿景与方向
+hope
 
-    每个人都可以用特别少的学习成本在终端上特别方便的读写代码。
-    用更少的学习成本就可以有更多的便利和更好的用户体验，保持安装过程以及这些配置文件的简洁性，同时在读写代码的过程中让cpu转更少的时钟周期。
+    every one can read and write code in terminal easily and conveniently, and consume less cpu cycle.
 
 
 FAQ

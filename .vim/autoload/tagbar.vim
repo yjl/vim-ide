@@ -177,7 +177,7 @@ function! s:InitTypes() abort
     let type_c.ctagstype = 'c'
     let type_c.kinds     = [
         \ {'short' : 'd', 'long' : 'macros',      'fold' : 1, 'stl' : 0},
-        \ {'short' : 'p', 'long' : 'prototypes',  'fold' : 0, 'stl' : 0},
+        \ {'short' : 'p', 'long' : 'prototypes',  'fold' : 1, 'stl' : 0},
         \ {'short' : 'g', 'long' : 'enums',       'fold' : 1, 'stl' : 1},
         \ {'short' : 'e', 'long' : 'enumerators', 'fold' : 1, 'stl' : 0},
         \ {'short' : 't', 'long' : 'typedefs',    'fold' : 1, 'stl' : 0},
@@ -204,7 +204,7 @@ function! s:InitTypes() abort
     let type_cpp.ctagstype = 'c++'
     let type_cpp.kinds     = [
         \ {'short' : 'd', 'long' : 'macros',      'fold' : 1, 'stl' : 0},
-        \ {'short' : 'p', 'long' : 'prototypes',  'fold' : 0, 'stl' : 0},
+        \ {'short' : 'p', 'long' : 'prototypes',  'fold' : 1, 'stl' : 0},
         \ {'short' : 'g', 'long' : 'enums',       'fold' : 1, 'stl' : 1},
         \ {'short' : 'e', 'long' : 'enumerators', 'fold' : 1, 'stl' : 0},
         \ {'short' : 't', 'long' : 'typedefs',    'fold' : 1, 'stl' : 0},
