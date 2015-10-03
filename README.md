@@ -9,9 +9,9 @@ Content
 
 where use it
     
-    System requirements：vim 7.2 or higher，support linux、 mac、 cygwin.
-    funciton：browse c/c++, python project
-    difference：one command to install，the experience is as much as source insight，but it't a simple vim. beside script, it only need ctags ans cscope.
+    system requirements：vim 7.2 or higher，support linux、 mac、 cygwin.
+    feature：browse c/c++, python project
+    difference：one command to install, beside config file, it only depand ctags and cscope. and it's experience is as much as source insight.
 
 
 how to install and update
@@ -31,7 +31,7 @@ how to use it read and write c/c++ project
 
     open project:
         cd into project root dir，vim (press enter button), must in project root dir. press F2 to open file tree, and select file to open.
-    create index:
+    update index:
         first open project or update some code in project, press F5 to update index，the index function is same to source insight index.
     read c/c++ code:
         1.jump
