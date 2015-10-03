@@ -3,8 +3,6 @@
     使用范围
     安装及更新方法
     自己总结的浏览和编写C/C++工程的使用方法
-    使用到的插件
-    对比
     方向与愿景
     FAQ
 
@@ -66,27 +64,6 @@
             .          反注释选中行
 
 
-使用到的插件    
-
-    tagbar         #函数变量列表（修改部分BUG，修改配置文件）
-    nerdcommenter  #注释功能（修改C语言默认用//注释，修改配置文件）
-    a              #切换头文件和实现文件（修改跨目录不能找到的问题，无修改配置文件）
-    nerdtree       #目录树（无修改，修改配置文件）
-    omnicpp        #C/C++的自动补全插件（无修改，修改配置文件）
-    bufexplorer    #当前打开的文件列表（无修改，修改配置文件）
-    AutoComplPop   #自动弹出补全菜单 （无修改，修改配置文件）
-    SuperTab       #按tab补全 （无修改，修改配置文件）
-
-
-对比
-
-    souce insight:通过Linux上的samba服务去写Linux主机里的代码，或者在windows上用source insight写完代码后再传到linux上。
-    eclipse:很好用，但不得打开Linux图形界面，另外eclipse运行很慢，尤其大项目。
-    qt creator:即使不是QT项目，当然也可以在Linux图形界面用QT creator写代码，比eclipse运行快。
-    codeblocks:也跟eclipse和qtcreator一样,要在linux下的图形界面下使用，用的不多，不做评价。
-    VIM与EMACS:作为开发环境都要加跳转及自动补全类的插件。它们都可以直接ssh到Linux主机直接使用,不需要打开图形界面。VIM与EMACS都可以无界限的加任何功能的插件。从基本操作上个人还是更喜欢emacs，但vim更容易定制到自己希望的样子。
-
-
 愿景与方向
 
     每个人都可以用特别少的学习成本在终端上特别方便的读写代码。
@@ -116,11 +93,27 @@ FAQ
     10、vim的复制粘贴？
         先按v或shift-v，选中一些内容，按y复制，把光标移动到想要粘贴的位置，按p。
     11、为什么没有把youcompleteme集成进来？
-        在我的评估里，他的复杂度大于实用度。而且现在的补全我觉得已经太够用了。
+        我的评估结果是，他的复杂度大于实用度。而且现在的补全我觉得已经太够用了。
     12、diff命令或svn diff命令出来的东西没有语法着色？
         diff ***** | vim - 或
         svn diff **** | vim -
         当然其他输出到终端的东西加上 | vim -也可以。
         '|'的意思是把上个命令的stderr和stdout，作为下一个命令的stdin。
         '-'的意思是把stdin作为一个文件打开
-
+    13、这个配置文件在搜索跳转补全等方面对c++支持怎么样？
+        非常好
+    14、vim用了这个配置文件后跟sourceinsight等工具对比怎么样？
+        souce insight:通过Linux上的samba服务去写Linux主机里的代码，或者在windows上用source insight写完代码后再传到linux上。
+        eclipse:很好用，但不得打开Linux图形界面，另外eclipse运行很慢，尤其大项目。
+        qt creator:即使不是QT项目，当然也可以在Linux图形界面用QT creator写代码，比eclipse运行快。
+        codeblocks:也跟eclipse和qtcreator一样,要在linux下的图形界面下使用，用的不多，不做评价。
+        VIM与EMACS:作为开发环境都要加跳转及自动补全类的插件。它们都可以直接ssh到Linux主机直接使用,不需要打开图形界面。VIM与EMACS都可以无界限的加任何功能的插件。从基本操作上个人还是更喜欢emacs，但vim更容易定制到自己希望的样子。
+    15、这份配置文件里用了哪些vim插件，这些插件是否是原生的?
+        tagbar         #函数变量列表（修改部分BUG，修改配置文件）
+        nerdcommenter  #注释功能（修改C语言默认用//注释，修改配置文件）
+        a              #切换头文件和实现文件（修改跨目录不能找到的问题，无修改配置文件）
+        nerdtree       #目录树（无修改，修改配置文件）
+        omnicpp        #C/C++的自动补全插件（无修改，修改配置文件）
+        bufexplorer    #当前打开的文件列表（无修改，修改配置文件）
+        AutoComplPop   #自动弹出补全菜单 （无修改，修改配置文件）
+        SuperTab       #按tab补全 （无修改，修改配置文件）
