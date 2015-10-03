@@ -53,8 +53,8 @@ map <silent> <F3> :TagbarToggle<cr>
 map <F4> :A<cr>
 "update index
 map <F5> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q<cr><cr>:cs kill cscope.out<cr>:!cscope -Rb<cr><cr>:cs add cscope.out<cr>
-"switch paste mode
-map <F6> :set paste!<cr>:set paste?<cr>
+"switch display invisable char or not
+map <F6> :set list!<cr>:set list?<cr>
 "highlight
 map <F7> ms:%s /\<<C-R>=expand("<cword>")<CR>\>//gn<cr>`s
 "swapfile list
