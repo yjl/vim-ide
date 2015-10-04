@@ -1,3 +1,7 @@
+have problem and suggest
+    QQ群：342426998
+
+
 where use it
     
     system requirements：vim 7.2 or higher，support linux、 mac、 cygwin.
@@ -7,7 +11,6 @@ where use it
 
 how to install and update
 
-    (insure the computer has connect to internet)
     1.centos, redhat, fedora install or update command:
       yum install ctags cscope wget unzip -y && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
     2.debian, ubuntu install or update command:
