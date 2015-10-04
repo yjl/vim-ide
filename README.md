@@ -23,7 +23,7 @@ how to use it read and write c/c++ project
     open project:
         cd into project root dir，vim (press enter button), must in project root dir. press F2 to open file tree, and select file to open.
     update index:
-        first open project or update some code in project, press F5 to update index，the index function is same to source insight index.
+        first time open project or update some code in project, press F5 to update index，the index function is same to source insight index.
     read c/c++ code:
         1.jump
             F3         throught tagbar to jump to another function in the file
