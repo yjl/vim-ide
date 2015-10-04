@@ -57,7 +57,7 @@ how to use it read and write c/c++ project
 
 hope
 
-    every one can read and write code in terminal easily and conveniently, and consume less cpu cycle.
+    consuming less finger, less brain and less cpu to write high quility code.
 
 
 FAQ
