@@ -57,7 +57,7 @@ how to use it read and write c/c++ project
 
 hope
 
-    consuming less finger, less brain and less cpu to write high quility code.
+    consuming less finger, less brain and less cpu to read and write code.
 
 
 FAQ
