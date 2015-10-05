@@ -7,7 +7,7 @@ where use it
     
     system requirements：vim 7.2 or higher，support linux、 mac、 cygwin.
     feature：browse c/c++, python project
-    difference：one command to install, beside config file, it only depand ctags and cscope. and it's experience is as much as source insight.
+    difference：one command to install and it's experience is as much as source insight.
 
 
 how to install and update
@@ -18,8 +18,6 @@ how to install and update
       apt-get install ctags cscope wget unzip -y && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
     3.mac install or update command, insure has installed brew, wget and unzip：
       brew install ctags cscope -y && hash ctags cscope wget unzip && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
-
-    (the command will install ctags、 cscope、 wget and unzip, at the same time it will download vim script into home dir and remove temp file)
 
 
 how to use it read and write c/c++ project
@@ -111,3 +109,5 @@ FAQ
         bufexplorer    #当前打开的文件列表（无修改，修改配置文件）
         AutoComplPop   #自动弹出补全菜单 （无修改，修改配置文件）
         SuperTab       #按tab补全 （无修改，修改配置文件）
+    16、安装命令都做了什么？
+        安装cscope, ctags, 然后下载一份vim脚本放在家目录下，最后清除临时文件。
