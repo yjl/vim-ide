@@ -73,8 +73,21 @@ Links
         vim 技巧小结         http://9014348.blog.51cto.com/9004348/1640979
         提升效率的若干Vim技巧  http://www.dutor.net/index.php/2011/09/efficient-vim-tips/
         Vim技巧总结          http://qindamoni.com/blog/2015/01/13/vimji-qiao-zong-jie/
-    5、与这个项目类似功能的项目
-        use_vim_as_ide       https://github.com/yangyangwithgnu/use_vim_as_ide
+        VIM快捷键大全        http://bbs.jcwcn.com/thread-201082-1-1.html
+        快速提高 Vi/Vim 使用效率的原则与途径   http://www.ibm.com/developerworks/cn/linux/l-cn-tip-vim/
+        鸟哥 第九章、vim 程式編輯器            http://linux.vbird.org/linux_basic/0310vi.php
+        高效率编辑器 VIM－操作篇               https://linuxtoy.org/archives/efficient-editing-with-vim.html
+    5、与这个项目类似功能的项目会配置文件说明
+        use_vim_as_ide                      https://github.com/yangyangwithgnu/use_vim_as_ide
+        超强vim配置文件                     https://github.com/ma6174/vim
+        Vim as a Python IDE                 https://github.com/mbrochh/vim-as-a-python-ide
+        强大的vim配置文件，让编程更随意     http://www.cnblogs.com/ma6174/archive/2011/12/10/2283393.html
+        史上最强的Vim 配置文件              http://blog.csdn.net/redguardtoo/article/details/1172136
+        我的VIM配置及说明【K-VIM】          http://www.wklken.me/posts/2013/06/11/linux-my-vim.html
+        Vim配置文件（全平台可用）           http://www.oschina.net/code/snippet_103341_10313
+        将你的Vim 打造成轻巧强大的IDE
+                                    http://yuez.me/jiang-ni-de-vim-da-zao-cheng-qing-qiao-qiang-da-de-ide/
+        vim 配置文件                        http://blog.sciencenet.cn/blog-683919-667321.html
     6、百科类vim说明
         维基百科             https://zh.wikipedia.org/wiki/Vim
         百度百科             http://baike.baidu.com/subview/113188/9338173.htm
@@ -82,6 +95,7 @@ Links
         ubuntu论坛vim/emacs页  http://forum.ubuntu.org.cn/viewforum.php?f=68
         Vimer的程序世界        http://www.vimer.cn/
         vim百度贴吧            http://tieba.baidu.com/f?kw=vim&fr=wwwt
+        水木vim板块            http://www.newsmth.net/nForum/#!board/VIM
 
 
 FAQ
