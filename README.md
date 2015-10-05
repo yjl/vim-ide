@@ -1,8 +1,3 @@
-have problem, suggest or want to get some news
-
-    QQ群：342426998
-
-
 where use it
     
     system requirements：vim 7.2 or higher，support linux、 mac、 cygwin.
@@ -63,6 +58,30 @@ how to use it read and write c/c++ project
 hope
 
     consuming less finger, less brain and less cpu to read and write code.
+
+
+Links
+
+    1、这个vim配置脚本的qq群
+        QQ群：342426998
+    2、vim官方网站
+        www.vim.org
+    3、最官方、最全、最新的下载vim脚本插件的地方
+        http://www.vim.org/scripts/index.php
+    4、vim基本快捷键等
+        vim里使用man命令     http://blog.csdn.net/langsim/article/details/46592761
+        vim 技巧小结         http://9014348.blog.51cto.com/9004348/1640979
+        提升效率的若干Vim技巧  http://www.dutor.net/index.php/2011/09/efficient-vim-tips/
+        Vim技巧总结          http://qindamoni.com/blog/2015/01/13/vimji-qiao-zong-jie/
+    5、与这个项目类似功能的项目
+        use_vim_as_ide       https://github.com/yangyangwithgnu/use_vim_as_ide
+    6、百科类vim说明
+        维基百科             https://zh.wikipedia.org/wiki/Vim
+        百度百科             http://baike.baidu.com/subview/113188/9338173.htm
+    7、vim相关论坛门户
+        ubuntu论坛vim/emacs页  http://forum.ubuntu.org.cn/viewforum.php?f=68
+        Vimer的程序世界        http://www.vimer.cn/
+        vim百度贴吧            http://tieba.baidu.com/f?kw=vim&fr=wwwt
 
 
 FAQ
