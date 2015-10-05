@@ -1,7 +1,7 @@
 where use it
     
     system requirements：vim 7.2 or higher，support linux、 mac、 cygwin.
-    feature：browse c/c++, python project
+    feature：browse c/c++, python project and improve experience to modify config file
     difference：one command to install and it's experience is as much as source insight.
 
 
