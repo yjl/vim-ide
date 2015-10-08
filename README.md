@@ -60,7 +60,7 @@ hope
     consuming less finger, less brain and less cpu to read and write code.
 
 
-Links
+links
 
     1、这个vim配置脚本的qq群
         QQ群：342426998
@@ -81,12 +81,11 @@ Links
         use_vim_as_ide                      https://github.com/yangyangwithgnu/use_vim_as_ide
         超强vim配置文件                     https://github.com/ma6174/vim
         Vim as a Python IDE                 https://github.com/mbrochh/vim-as-a-python-ide
-        强大的vim配置文件，让编程更随意     http://www.cnblogs.com/ma6174/archive/2011/12/10/2283393.html
+        强大的vim配置文件,让编程更随意      http://www.cnblogs.com/ma6174/archive/2011/12/10/2283393.html
         史上最强的Vim 配置文件              http://blog.csdn.net/redguardtoo/article/details/1172136
-        我的VIM配置及说明【K-VIM】          http://www.wklken.me/posts/2013/06/11/linux-my-vim.html
-        Vim配置文件（全平台可用）           http://www.oschina.net/code/snippet_103341_10313
-        将你的Vim 打造成轻巧强大的IDE
-                                    http://yuez.me/jiang-ni-de-vim-da-zao-cheng-qing-qiao-qiang-da-de-ide/
+        我的VIM配置及说明K-VIM              http://www.wklken.me/posts/2013/06/11/linux-my-vim.html
+        Vim配置文件全平台可用               http://www.oschina.net/code/snippet_103341_10313
+        将你的Vim 打造成轻巧强大的IDE  http://yuez.me/jiang-ni-de-vim-da-zao-cheng-qing-qiao-qiang-da-de-ide/
         vim 配置文件                        http://blog.sciencenet.cn/blog-683919-667321.html
     6、百科类vim说明
         维基百科             https://zh.wikipedia.org/wiki/Vim
@@ -96,9 +95,10 @@ Links
         Vimer的程序世界        http://www.vimer.cn/
         vim百度贴吧            http://tieba.baidu.com/f?kw=vim&fr=wwwt
         水木vim板块            http://www.newsmth.net/nForum/#!board/VIM
+        知乎vim                http://www.zhihu.com/topic/19570193?page=2
 
 
-FAQ
+faq
 
     1、问什么不让行号默认显示？
         右下角已经有了，不仅有行号，还有列号。
