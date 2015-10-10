@@ -96,6 +96,7 @@ links
         vim百度贴吧            http://tieba.baidu.com/f?kw=vim&fr=wwwt
         水木vim板块            http://www.newsmth.net/nForum/#!board/VIM
         知乎vim                http://www.zhihu.com/topic/19570193?page=2
+        豆瓣vim                http://www.douban.com/group/vim/
 
 
 faq
