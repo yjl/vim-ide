@@ -1,4 +1,4 @@
-colorscheme desert
+colorscheme monokai
 syntax on
 filetype plugin indent on
 set t_Co=256
@@ -98,3 +98,8 @@ if has("cscope")
         cs add cscope.out
     endif
 endif
+
+imap <S-SPACE> <Right>
+set number
+set guifont=Consolas:h12:cANSI
+"set tags=tags
