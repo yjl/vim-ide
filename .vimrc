@@ -1,8 +1,8 @@
 colorscheme monokai
 syntax on
 filetype plugin indent on
-set t_Co=256
-set background=dark  "dark light "can switch it to find which is look pretty
+"set t_Co=256
+"set background=dark  "dark light "can switch it to find which is look pretty
 set nocompatible                 "some plugin need it
 set hlsearch                     "highlight the search
 set incsearch                    "move to fit position after one char input
@@ -99,7 +99,7 @@ if has("cscope")
     endif
 endif
 
-imap <S-SPACE> <Right>
+imap <S-SPACE> l 
 set number
 set guifont=Consolas:h12:cANSI
 "set tags=tags
