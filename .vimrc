@@ -99,7 +99,8 @@ if has("cscope")
     endif
 endif
 
-imap <S-SPACE> l 
+imap <S-SPACE><Right>
 set number
 set guifont=Consolas:h12:cANSI
 "set tags=tags
+set cindent shiftwidth=4
