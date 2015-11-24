@@ -96,7 +96,7 @@ nmap <F12>e :cs find e <C-R>=expand("<cword>")<CR><CR>
 "list the file which filename is this word
 nmap <F12>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
 "list the file include the file which filename is this word
-nmap <F12>i :cs find i <C-R>=expand("<cfile>")<CR>$<CR>
+nmap <F12>i :cs find i <C-R>=expand("<cfile>")<CR><CR>
 "list the file which include this file
 nmap <F12>I :cs find i <C-R>=expand("%:t")<CR><CR>
 
