@@ -27,7 +27,7 @@ set fileformats=unix,dos,mac     "line feed different in different mode
 set completeopt=menuone,longest
 
 highlight default link TagbarHighlight  Title
-let NERDTreeQuitOnOpen=1
+let NERDTreeQuitOnOpen=0
 let NERDTreeDirArrows=0
 let NERDTreeWinSize=40
 let NERDRemoveExtraSpaces=0
